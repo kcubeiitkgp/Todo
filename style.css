@@ -2,12 +2,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
   font-size: 36px;
   text-align: center;
   margin: 20px 0;
+  color: #0077cc;
 }
 
 ul {
@@ -19,33 +27,67 @@ ul {
 li {
   font-size: 24px;
   margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px
+inset rgba(0,0,0,0.2);
+display: flex;
+justify-content: space-between;
+}
+
+.completed {
+text-decoration: line-through;
+color: #888;
 }
 
 form {
-  display: flex;
-  margin-top: 20px;
+display: flex;
+margin-top: 20px;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+padding: 10px;
 }
 
 label {
-  font-size: 20px;
-  margin-right: 10px;
+font-size: 20px;
+margin-right: 10px;
 }
 
 input[type="text"] {
-  font-size: 20px;
-  padding: 5px;
-  flex-grow: 1;
+font-size: 20px;
+padding: 5px;
+flex-grow: 1;
+border: none;
 }
 
 button[type="submit"] {
-  font-size: 20px;
-  padding: 5px 10px;
-  background-color: #0077cc;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+font-size: 20px;
+padding: 5px 10px;
+background-color: #0077cc;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #0066b2;
+background-color: #0066b2;
+}
+
+.clear-btn {
+font-size: 20px;
+padding: 5px 10px;
+background-color: #ccc;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.clear-btn:hover {
+background-color: #999;
 }
