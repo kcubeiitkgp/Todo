@@ -6,16 +6,19 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <h1>Today's Tasks</h1>
-    <ul>
-      <li>Task 1</li>
-      <li>Task 2</li>
-      <li>Task 3</li>
-    </ul>
-    <form>
-      <label for="newTask">New Task:</label>
-      <input type="text" id="newTask" name="newTask">
-      <button type="submit">Add Task</button>
-    </form>
+    <div class="container">
+      <h1>Today's Tasks</h1>
+      <ul>
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+      </ul>
+      <form>
+        <label for="newTask">New Task:</label>
+        <input type="text" id="newTask" name="newTask">
+        <button type="submit">Add Task</button>
+      </form>
+      <button class="clear-btn" onclick="clearCompletedTasks()">Clear Completed</button>
+    </div>
   </body>
 </html>
