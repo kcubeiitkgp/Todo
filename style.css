@@ -76,7 +76,14 @@ button.clear-btn {
   border: none;
   color: #fff;
   cursor: pointer;
-  transition
+  transition: background-color 0.2s ease-in-out;
+  background-color: #ccc;
+}
+
+button.clear-btn:hover {
+  background-color: #999;
+}
+
 button[type="submit"] {
   background-color: #0077cc;
 }
