@@ -2,23 +2,20 @@
 <html>
   <head>
     <title>Today's Tasks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>Today's Tasks</h1>
-      <ul>
-        <li>Task 1</li>
-        <li>Task 2</li>
-        <li>Task 3</li>
-      </ul>
+      <ul id="taskList"></ul>
       <form>
         <label for="newTask">New Task:</label>
-        <input type="text" id="newTask" name="newTask">
-        <button type="submit">Add Task</button>
+        <input type="text" id="newTask" name="newTask" placeholder="Enter task">
+        <button type="submit">Add</button>
       </form>
-      <button class="clear-btn" onclick="clearCompletedTasks()">Clear Completed</button>
+      <button class="clear-btn" id="clearBtn">Clear Completed</button>
     </div>
   </body>
 </html>
